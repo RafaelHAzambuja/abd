@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #215942;
+    --cor2: #351d6b;
+    --cor3: #b22424;
+    --cor4: #ffffff;
+    --cor5: #000000;
+    --cor6: #388f69;
+}
+
+@font-face {
+    font-family: "Alice";
+    src: url("../fontes/Alice_in_Wonderland_3.ttf") format("truetype");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: var(--cor4);
+    color: var(--cor5);
+    height: 86vh;
+    width: 100vw;
+    text-align: center;
+    padding-top: 40vh;
+}

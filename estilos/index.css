@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #215942;
+    --cor2: #351d6b;
+    --cor3: #b22424;
+    --cor4: #ffffff;
+    --cor5: #000000;
+    --cor6: #388f69;
+}
+
+@font-face {
+    font-family: "Alice";
+    src: url("../fontes/Alice_in_Wonderland_3.ttf") format("truetype");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.corpo {
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto {
+    width: 850px;
+    text-align: center;
+    font-family: Alice, Cursive;
+    color: var(--cor4);
+    font-size: 7.5vw;
+    text-shadow: 5px 5px 0px black;
+}
+
+.textoseg {
+    font-size: 2em;
+    color: var(--cor4);
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 3px 3px 0px black;
+    padding-bottom: 70px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.botoes button {
+    width: 20vw;
+    height: 10vh;
+    cursor: pointer;
+    border: 1px solid var(--cor4);
+    color: var(--cor4);
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    border-radius: 20px;
+    position: relative;
+    transition: 1.5s;
+    text-shadow: 2px 2px 0px black;
+}
+
+.botoes button:hover {
+    color: var(--cor4);
+    border: none;
+}
+
+.botoes button:before {
+    content: ' ';
+    border-radius: 20px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 60px;
+    background-color: var(--cor2);
+    z-index: -1;
+    transition: 1s;
+}
+
+.botoes button:hover:before {
+    width: 100%;
+}
