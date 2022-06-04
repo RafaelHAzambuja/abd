@@ -22,9 +22,6 @@
     box-sizing: border-box;
 }
 
-body {
-    padding-bottom: 17vh;
-}
 main {
     background-color: rgba(255, 255, 255, 0.767);
     width: 90vw;
@@ -32,6 +29,7 @@ main {
     min-height: 86vh;   
     margin: auto;
     color: var(--cor5);
+    padding-bottom: 17vh;
 }
 
 .corpo {
