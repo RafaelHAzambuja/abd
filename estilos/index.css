@@ -31,7 +31,6 @@
 }
 
 .texto {
-    width: 850px;
     text-align: center;
     font-family: Alice, Cursive;
     color: var(--cor4);
