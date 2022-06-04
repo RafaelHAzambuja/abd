@@ -39,6 +39,7 @@ body {
     background-position-y: 0px;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    width: 100vw;
 }
 
 header {
